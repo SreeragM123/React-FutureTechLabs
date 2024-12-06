@@ -1,0 +1,56 @@
+.style
+{
+    position: relative;
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+   
+}
+.desc{
+    color: blueviolet;
+    position: absolute;
+    top: 20px;
+    margin-left: 380px;
+    margin-top: 50px;
+}
+/* image img{
+    width: 50%;
+    height: 100px;
+} */
+
+.style1{
+    position: relative;
+    width: 50%;
+    height: auto;
+    border: 1px solid gray;
+    top: 20px;
+}
+.desc1{
+    color: rebeccapurple;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 80px;
+    top: 15rem;
+    left: 30rem;
+}
+.style2{
+    position: relative;
+    width: 50%;
+    height: auto;
+    border: 1px solid gray;
+    top: 50px;
+}
+.desc2{
+    color: rebeccapurple;
+    position: absolute;
+    margin-left: 50px;
+    bottom: 250px;
+    left: 20rem;
+    
+}
+.but{
+    background-color: white;
+    border: 3px solid blueviolet;
+    padding: 10px;
+    border-radius: 5px;
+}

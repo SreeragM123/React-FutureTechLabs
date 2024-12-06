@@ -1,0 +1,314 @@
+#root {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar {
+  background-color: #fffefe; /* Dark background color for the navbar */
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.logo {
+  color: #ffcc00; /* Logo color */
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #ffcc00; /* Hover effect for links */
+}
+
+.register-button {
+  background-color: #ffcc00; /* Button background */
+  color: #333; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.register-button:hover {
+  background-color: #e6b800; /* Button hover effect */
+  color: #fff;
+}
+
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    background-color: #ffffff;
+}
+
+.hero-content {
+    margin-top: 90px;
+    max-width: 40%;
+}
+
+.hero-tagline {
+    
+    color: #666;
+    font-size: 20px;
+    /* display: flex; */
+    align-items: center;
+}
+
+.hero-tagline .bulb {
+    margin-right: 0.5em;
+    width: 30px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0.5em 0;
+}
+
+.trust-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.trust-avatars {
+    width: 100px;
+    height: auto;
+    margin-right: 0.5em;
+}
+
+.hero-image img {
+    width: 550px; 
+    height: 50vh;
+}
+
+
+
+.skill {
+  display: flex;
+  background-color: #fff;
+  padding: 30px;
+  justify-content: center;
+}
+
+.skills {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills img {
+  width: 80%;
+  margin-top: 80px;
+}
+
+.skill-content {
+  flex: 1;
+  padding-left: 20px;
+  margin-top: 80px;
+}
+
+.skill-content h1 {
+  font-size: 24px;
+  color: #1d2d50;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.skill-content p {
+  color: #5a5a5a;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.skill-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.skill-content ul li {
+  color: #000000;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.skill-content ul li::before {
+  content: '➔ ';
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+footer {
+  background-color: #000000;
+  padding: 80px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer-container{
+  margin: 0 auto;
+  /* padding: 20px;   */
+}
+
+footer .footer-info {
+  width: 30%;
+  margin-left: 10%;
+}
+
+.footer-info img{
+  width: 60px;
+  margin-right: 430px;
+  margin-bottom: 10px;
+}
+
+.footer-info p{
+  margin-right: 10px;
+}
+
+footer .footer-links{
+  display: flex;
+}
+
+.footer-info .social-links{
+  margin-top: 20px;
+  margin-right: 350px;
+}
+
+.footer-info .social-links a {
+  margin-right: 10px;
+  font-size: 24px;
+  text-decoration: none;
+  color:#ffffff;
+}
+
+.footer-links .quick-links{
+  margin-right: 30px; 
+  width: 30%;
+}
+
+.footer-links .branches{
+  margin-right: 100px;
+  width: 30%;
+}
+
+footer h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #777;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.footer-links .contact{
+  margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
