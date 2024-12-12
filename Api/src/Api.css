@@ -1,0 +1,88 @@
+/* Add this to your CSS file, for example App.css or in a separate CSS file */
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px; /* Space between the cards */
+  background-color: #f8f9fa; /* Light background for the cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the area properly */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between the columns */
+}
+
+.col {
+  display: flex;
+  justify-content: center; /* Align the cards center in each column */
+}
+
+/* Responsive breakpoints */
+@media (max-width: 576px) {
+  .col {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+}
+
+@media (min-width: 576px) {
+  .col {
+    flex: 1 1 45%; /* 2 cards per row on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    flex: 1 1 30%; /* 3 cards per row on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .col {
+    flex: 1 1 22%; /* 4 cards per row on large screens */
+  }
+}
