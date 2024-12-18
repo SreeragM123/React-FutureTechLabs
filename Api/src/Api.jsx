@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import './Api.css';
 
 const Api = () => {
   const [meals, setMeals] = useState([]);
+  const [search, setSearch] = useState("");  
 
   const fetchMeal = async () => {
     try {
@@ -19,11 +20,27 @@ const Api = () => {
     fetchMeal();
   }, []);
 
+  const filteredMeals = meals.filter(meal =>
+    meal.strCategory.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <Container>
+      <Form className='mb-4'>
+        <Form.Group controlId="search"> 
+          <Form.Control
+            className="search-input"
+            type="text"
+            placeholder="Search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}  
+          />
+        </Form.Group>
+      </Form>
+
       <Row>
-        {meals.map((meal) => (
-          <Col key={meal.idCategory} >
+        {filteredMeals.map((meal) => (
+          <Col key={meal.idCategory}>
             <Card>
               <Card.Img variant="top" src={meal.strCategoryThumb} />
               <Card.Body>

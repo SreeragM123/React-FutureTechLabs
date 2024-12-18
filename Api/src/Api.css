@@ -4,6 +4,7 @@
 }
 
 .card {
+  margin-top: 30px;
   margin-bottom: 20px; /* Space between the cards */
   background-color: #f8f9fa; /* Light background for the cards */
   border-radius: 8px;
@@ -85,4 +86,28 @@ button:hover {
   .col {
     flex: 1 1 22%; /* 4 cards per row on large screens */
   }
+}
+
+/* Style the search input */
+.search-input {
+  border-radius: 25px;         /* Rounded corners */
+  padding: 10px 20px;          /* Add some padding inside the input */
+  font-size: 1.1rem;           /* Increase font size */
+  width: 100%;                 /* Ensure it spans the full width of its container */
+  max-width: 400px;            /* Optional: Set a max width for large screens */
+  margin: 0 auto;              /* Center the input horizontally */
+  display: block;              /* Make it a block-level element */
+  border: 1px solid #ccc;     /* Light gray border */
+  transition: all 0.3s ease;   /* Smooth transition for focus effect */
+}
+
+.search-input:focus {
+  outline: none;              /* Remove default focus outline */
+  border-color: #007bff;      /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Add shadow for focus effect */
+}
+
+/* Optional: Add some spacing for the search box */
+.form-group {
+  margin-bottom: 20px; /* Space between the search input and other components */
 }
