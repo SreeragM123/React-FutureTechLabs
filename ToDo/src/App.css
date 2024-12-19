@@ -1,0 +1,79 @@
+.App {
+  margin-left: 800px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background:linear-gradient(135deg,#00feba,#0bdf39);
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Horizontally center the content */
+}
+
+h1 {
+  color: black;
+}
+
+.task-input {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure input and button are aligned within the container */
+}
+
+.task-input input {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  margin-right: 10px;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filters {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the filter buttons */
+  width: 100%;
+}
+
+.filters button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-list {
+  margin-top: 20px;
+  width: 100%; /* Ensure task list takes up full width */
+}
+
+.task {
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task span {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.task button {
+  color: black;
+  background-color: yellow;
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
